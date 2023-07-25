@@ -1,0 +1,830 @@
+*{
+    
+}
+html{
+    display: block;
+    width: 100%;
+    min-width: 50%;
+    zoom: 70%;/*zoom apenas para visualizar*/
+    /*Verificar esse padding*/
+    overflow-x: hidden;
+    /*testar altura min outro tamanho*/
+}
+body{
+}
+
+@media (max-width: 800px) {
+    html{
+        width: 100%;
+        min-width: 50%;
+        zoom: 60%;/*zoom apenas para visualizar*/
+        overflow-x: hidden;
+    }
+    body{  
+    }
+    main{
+    }
+    #sec1{
+        zoom: 100%;
+        border: none;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        padding-left: 0px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100vw;
+        min-height: fit-content;
+        min-width: 100%;
+    }
+    #JanelaPrincipal{
+        left: 1px;
+    }
+    #ElementosSec1{
+        left: 0px
+    }
+    .JanelaPrincipal{
+        margin-top:0px;
+        padding-top: 0px;!important
+        margin-bottom: 200px;
+        min-width: 90%;
+        height: 80vw;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .FundoMenorJanela{
+        position: relative;
+        height: 500px;
+    }
+    #conteudo.FundoMenorJanela{
+        background-image: url(FundoHeros0.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-width: 100%;
+        min-height: 600px;
+        max-width: 600px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+    }
+    .PlanosEmGrid{
+        gap: 100px;
+        min-width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+    .tituloLink{
+        text-align: center;
+    }
+    .EstiloDoBotaoSignUpNow{
+        padding-right: 100px;
+        margin-right: 0px;
+        border-radius: 5px;
+        text-align: end;
+    }
+    .EstiloDoBotaoPrincipal{
+        right: 20px;
+    }
+    .DivbotaoJanelaPrincipal{  
+    }
+    .TituloJanelaPrincipal{
+        font-size: 40px;
+        width: 100%;
+        min-width:100%;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: relative;
+        right: 10px;
+        margin-left: 30px;
+    }
+    .JanelaSecundaria{
+        padding-top: 200px;
+    }
+    .DisneyCombo{
+        max-height: 60px;
+        width: 100%;
+    }
+    .StarDisney{
+        max-height: 60px;
+        width: 100%;
+        padding-right: 30px;
+    }
+    .ElementosSec1{
+        top: 90px;
+        width: 110%;
+        z-index: 3;
+    }
+    #ElementosSecBotao{
+        zoom: 80%;
+        position: relative;
+        display: inline-flex;
+    }
+    .imgDisneyLogo{
+        padding-left: 0px;
+    }
+
+    /*OBS*/
+    .spanBotaoSignUp{
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+    .grid-container {
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        height: 100vw;
+        justify-content: center;    
+    }
+    #espacoEntreButoes{
+    }
+    .SignUpOnlyTo{
+        margin-left: 15%;
+        width: 100%;
+    }
+    .botaoSignUp{
+        max-width: 250px;
+        max-height: 50px;   
+    }
+    .espacoQuartaSessao{
+        min-height: 100px;
+    }
+    .FilmesEmGrid{
+        margin-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: auto;
+        zoom: 90%;
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-left: 0px;
+        padding: 10px;
+}
+}
+
+    .espacoEntreButoes{
+        width: 5%;
+    }
+    .imgDisneyLogo{
+        padding-left: 50px;
+        min-width: 400px;
+    }
+    
+    
+    .botaoSignUp{
+        max-width: 250px;
+        min-width: 250px;
+        padding-top: 20px;
+        font-size: 20px;
+        padding: 15px;
+        
+        height: auto;
+        display: block;
+        color: rgb(184, 178, 190);
+        background-color: #6421FF;
+        border: transparent;
+        border-radius: 3%;
+        cursor: pointer;
+    }
+    
+    .DivDoTitulo{
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+    .ElementoGrid2{
+        padding: 10px;
+        zoom: 80%;
+        font-size: 20px;
+    }
+    .ElementoGrid2 img {
+        font-size: 12px;
+        
+        margin: auto;
+    }
+    .PlanosEmGrid{
+        font-size: 20px;
+        margin-left: -100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .ElementoGrid2 p{
+        margin-left: -100px;
+    }
+/*-----------terceiraparte------------------*/
+    .terceiraParte{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 200vh;
+        border: 5px solid transparent;
+    }
+    .DivTerceiraParte1 {
+        flex: 1 1 50%;
+    }
+    .imgTerceiraParte1{
+        width: 100%;
+    }
+    .DivTerceiraParte2 {
+        flex: 1 1 90%;
+        border: 5px solid transparent;
+        padding-bottom: 100px;
+    }
+    main{
+        min-width: 100%;
+        width: 90vw;
+        padding-right: 50px;
+    }
+    .containerSec1{
+        position: relative;
+        height: 15vh;
+        width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ElementosSec1{
+        margin-right:80px   ;
+        padding-left: 0px;
+    }
+    #ElementosSecBotao{
+        min-width: 90%;
+        width: 100%;
+        margin-right: 80px;
+        display: inline-flex;
+        padding-left: 0px;  
+        padding-left: 40px;
+    }
+
+    .CancelAnyTime{
+        position: relative;
+        right: 10px;
+        cursor: pointer;
+    }
+/*----------------------------------------------*/
+    .ElementosSec1 span {
+        right: 100px;
+    }
+    .DivTerceiraParte1{
+        min-width: 100%;
+    }
+    .DivTerceiraParte2{
+        display: block;
+        height: fit-content;
+        text-align: center;
+    }
+    section.quartaParte{
+        margin-top: 30vw;
+    }
+
+/*-----------quartaparte------------------*/
+    .quartaParte{
+        border: 1px solid transparent;
+        padding-top: 500px;
+        padding: 40px;
+        min-width: 100%;
+    }
+    .TituloQuintaParte{
+    }
+
+    .FilmeGrid{
+        min-width:30vw;
+        width: 30vw;
+        
+    }
+    .ElementoGrid{
+
+    }
+    div.FilmeGrid{
+        margin-left: 30px;
+    }
+    .quartaParte img{
+        padding: ;
+    } 
+    .fotoPrincipalS3 img{
+    }
+    .quintaParte{
+        position: relative;
+        display: flex;
+        top: 300px;
+        margin: auto;
+        bottom
+        width:95%;
+        padding: 10px;
+        height:200vh;  
+        justify-content: center;
+        background-image: url(build/images/fundo_rei_leao.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        flex-direction: column;
+    }
+    .TituloQuintaParte{
+        width: 100%;
+        min-width: 100%;
+        position: relative;
+        top:100px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .sextaParte{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 20vh;
+        place-items: center;
+        text-align: center;
+        /*padding*/
+        padding-left: 20px;
+    }
+    .containerLista{
+        place-items: center;
+        box-sizing: border-box;
+    }
+    footer{
+        width: 100vw;
+        min-width: 100%;
+    }
+    h4{
+        font-size: 20px;
+    }
+
+.topo{
+    display: block;
+}
+    
+body{
+    background-color: #040814;
+    justify-content:center;
+}
+.main{
+    /*main*/
+    height: max-content;
+}
+#sec1{
+    zoom: 120%;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+.imgDisneyLogo{
+
+}
+/*FUNDO HEROS*/
+.FundoMenorJanela{
+    height: 60vh;
+    width: 110%;
+    min-width: 1040px;
+    max-width: 1040px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    /*----*/
+    position: relative;
+    top: 20px;
+    left: 110px;
+    
+}
+.spanEntreImagens{
+    width: 15%;
+    background-color: transparent;
+}
+.fundoJanelaPrincipal{
+}
+.JanelaPrincipal{
+    padding-top: 20px;
+    height: 120vh;
+    width: 100vw;
+    position: relative;
+    left: 190px;
+    zoom: 110%;
+    font-size: larger;
+    top: -90px;
+}
+/*OBS*/
+/*---primeira-parte---------*/
+.fundoJanelaPrincipal{
+    background-image: url(FundoHeros1.jpg);
+    background-blend-mode: ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    width: 100%;
+    position: relative;
+}
+.EstiloDoBotaoPrincipal{
+    float: right;
+    position: relative;
+    top: 10px;
+    width: 150px;
+    min-height:75px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: #040814;
+    color: white;
+    padding-top:18px;
+    padding-bottom:18px;
+    padding-right:26px;
+    padding-left:26px;
+}
+.EstiloDoBotaoSignUpNow{
+    right: 170px;
+    font-size: 18px;
+    border-radius: 10px;
+    position: absolute;
+    top:10px;   
+    
+    background-color: #0d3dcd;
+    color: white;
+    
+    cursor: pointer;
+    
+    width: fit-content;
+    font-size: 30px;
+    padding-top:18px ;
+    padding-bottom:18px ;
+    padding-right:26px;
+    padding-left:20px;
+    
+}
+.containerSec1{
+    background-color:;
+    height: 10vh;
+    width: 110%;
+    padding-right: ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.DisneyCombo{
+    position: relative;
+    z-index: 3;
+    width: 200px;
+    height: 60px;
+}
+.StarDisney{
+    width: 250px;
+    height: 60px;
+}
+.ElementosSec1{
+    /*-----------------*/
+    padding-left: 60px;
+    top: 90px;
+    width: 110%;
+    z-index: 3;
+}
+
+#ElementosSecBotao{
+    zoom: 100%;
+    /*-----------------*/
+    
+    position: relative;
+    display: inline-flex;
+}
+.spanBotaoSignUp{
+    position: relative;
+    /*local botao fora*/
+    
+    zoom: 120%;
+}
+.DivbotaoJanelaPrincipal{
+    min-width: 100%;
+}
+.TituloJanelaPrincipal{
+    color: white;
+    font-size: 30px;
+}
+.tituloLink{
+    position: relative; 
+    border: 1px solid transparent;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/*---segunda-parte---------*/
+.JanelaSecundaria{
+    position: relative;
+    top: 400px;
+    height: 200vh;
+    width: 100vw;
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: auto;
+}
+.DivDoTitulo{
+    width: 100%;
+    display: flex;
+    height: 100px;
+    padding-top: 100px;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.EstiloDoTitulo{
+    font-size: 40px;
+    width: 100%;
+    min-width:100%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+}
+.PlanosEmGrid{
+   
+}
+.ElementoGrid{
+    border: 1px solid transparent;
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+}
+.TamanhoImg1{
+    border: 1px solid transparent;
+    width: 100px;
+    height: 60px;
+    cursor: pointer;
+}
+.TamanhoImg2{
+    border: 1px solid transparent;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+}
+.TamanhoImg3{
+    border: 1px solid transparent;
+    width: 200px;   
+    height: 60px;
+    cursor: pointer;
+}
+.BotaoPlanoMensal{
+    height: 40px;
+    width: 180px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(104, 38, 166);
+    border: transparent;
+    border-radius: 3%;
+}
+.PlanosEmGrid2{
+    display: grid;
+    border: 1px solid transparent;
+    grid-template-columns: 27vw 23vw 23vw 23vw;
+}
+.ElementoGrid2{
+    border: 1px solid transparent;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: start;
+    color: rgb(213, 210, 210);
+}
+/*------------terceira-parte--------------*/
+.terceiraParte{
+    position: relative;
+    display: inline-flex;
+    top: 200px;
+    width: 100%;
+    height: 100vh;
+}
+.DivTerceiraParte1{
+    width: 100%;
+}
+.DivTerceiraParte2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.fotoPrincipalS3{
+    padding: 50px;
+}
+.white{
+    color: white;
+}
+/*-----------quartaParte---------------*/
+.quartaParte{
+    margin-left:-50px;
+    position: relative;
+    display: flex;
+    top: 300px;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CabecalhoSite{
+    padding-left: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.FilmesEmGrid{
+
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(3, 33%);
+    zoom: 90%;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+.FilmeGrid{
+    height: auto;
+    width: 80%;
+    padding: px;
+    text-align: center;
+    cursor: pointer;
+}
+.FilmeGrid:hover{
+    opacity: 0.9;
+}
+
+.quintaParte{
+    position: relative;
+    display: flex;
+    top: 300px;
+    margin: auto;
+    width:70%;
+    padding: 100px;
+    height:100%;
+    background-position: ;
+    background-size: contain;
+    justify-content: center;
+    background-image: url(build/images/fundo_rei_leao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: end;
+    
+}
+
+.TituloQuintaParte{
+    width: 30%;
+    font-size: 23px;
+    padding: 80px;
+    color: rgb(206, 206, 206);
+}
+
+.sextaParte{
+    position: relative;
+    top: 400px;
+    width: 100%;
+    padding: 300px 100px 200px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 20vh;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+    font-size: 20px;
+}
+
+.containerLista ul{
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+}
+
+.setimaParte{
+    width: 100%;
+    padding: 50px 0px 200px 0px;
+    height: 100vh;
+    top: 400px;
+    position: relative;
+}
+
+.accordion{
+    background-color: #13151D;
+    height:8vh;
+    align-items: center;
+    padding:10px 10px 30px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    display: block;
+}
+
+.accordionAbertoOff{
+    height:fit-content;
+    padding:0px 10px 10px 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;
+    text-align: left;
+    font-size: 22px;
+    display: none;
+    opacity: 0;
+    animation:slide-down 600ms forwards ;
+
+}
+
+.accordionstyle{
+    padding-left: 20px;
+    background-color: #13151D;
+    width: 90%;
+    border: none;
+}
+
+.listaAccordion{
+    color: #C0C0C0;
+}
+
+ul.listaAccordion li {
+    color:#C0C0C0;
+    font-size: 20px;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    
+    font-size: ;
+}
+
+.botaoAccordion{
+    border: transparent;
+}
+
+.div-rolagem{
+    animation:fade-in 600ms forwards ;
+    position: sticky;
+    top: 0px; height: 100px; background-color: #040814; z-index: 3; display: none;
+    
+    width:101%;
+    z-index: 999;
+}
+
+.imagemMais{
+    background-image: url(Mais.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #040814;
+    width: 30px;
+    height: 30px;
+    transition: all 1s;
+    border: none;
+}
+
+.imagemMenos{
+    background-image: url(Menos.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    transition: all 1s;
+    border: none;
+}
+
+@keyframes fade-in{
+        0%{
+        opacity:0;
+        }
+        100%{
+        opacity:1;
+        }
+    }
+    @keyframes slide-down {
+        0% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0%);
+        }
+      }

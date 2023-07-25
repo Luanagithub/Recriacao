@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html style="" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/fontes/fontes.css">
+</head>
+<script>
+    document.addEventListener('gesturestart', function (e) {
+    e.preventDefault();
+    });
+
+    window.addEventListener('scroll', function() {
+    var divRolagem = document.querySelector('.div-rolagem');
+    var elementoReferencia = document.getElementById('conteudo');
+    var topBotaoJanelaPrincipal = document.querySelector('.DivbotaoJanelaPrincipal')
+    var alturaDesejada = elementoReferencia.offsetTop; // Obtém a altura desejada do elemento com ID "conteudo"
+    if (window.scrollY > alturaDesejada) {
+      divRolagem.style.display = 'block'; // Exibe a div quando a janela é rolada até a altura desejada
+      topBotaoJanelaPrincipal.style.display='none';
+    } else {
+      divRolagem.style.display = 'none'; // Oculta a div quando a janela é rolada acima da altura desejada
+      topBotaoJanelaPrincipal.style.display='inline-block';
+    }
+    });
+
+    function toggleBackground(id) {
+    var elemento = document.getElementById(id);
+    if (elemento.classList.contains("imagemMais")) {
+        elemento.classList.remove("imagemMais");
+        elemento.classList.add("imagemMenos");
+    } else {
+        elemento.classList.remove("imagemMenos");
+        elemento.classList.add("imagemMais");
+    }
+    }
+
+    function togglePropriedade(elementoID) {
+    var elemento = document.getElementById(elementoID);
+    if (elemento.classList.contains('accordionAbertoOff')) {
+        elemento.classList.remove('accordionAbertoOff');
+    } else {
+        elemento.classList.add('accordionAbertoOff');
+    }
+    }
+</script>   
+
+<body>
+    
+    <br>
+    <div class="DivbotaoJanelaPrincipal" style="display: inline-block;"><button class="EstiloDoBotaoPrincipal">LOG IN</button></div>
+
+
+    <header class="div-rolagem">
+        <img class="imgDisneyTopo" style="width: 100px;" src="Imagens/Disney+.jpg">
+        
+        <button class="EstiloDoBotaoPrincipal" style="position: absolute; right: 5px; float: right;">LOG IN</button>
+        <button class="EstiloDoBotaoSignUpNow">SIGN UP NOW</button>
+
+        <div class="botaoJanelaPrincipal"></div>
+    </header>
+
+    
+
+    <main>
+        <section id="sec1" style="">
+            <div class="JanelaPrincipal" id="JanelaPrincipal">
+
+                <span><div style="display: inline-block;width: 40px;"></div></span>
+        
+                <div class="ElementosSec1" id="ElementosSec1" style="left: 30px;position: relative;">
+                <img src="Imagens/Disney+.jpg" style="width: 300px;position: relative;" class="imgDisneyLogo">
+                <br>
+                
+                <h2 class="TituloJanelaPrincipal" style="min-width: 400px;">Enjoy the greatest stories, all in one place.</h2>
+                    <br>
+                    
+                </div>
+                
+                
+            <div class="SignUpOnlyTo" style="color: white;text-decoration: underline;text-align: center;position: relative;top: 260px;cursor: pointer;padding-right:60px">
+                
+                Sign up only to Disney+</div>
+
+            <div id="ElementosSecBotao"  class="grid-container">
+
+                <span  class="spanBotaoSignUp" id="spanBotaoSignUp1"  style="margin-left: ;max-height: 60px;text-align: center;position: relative; top: 50px">
+                    <!--position: relative; top: 100px-->
+
+                    <img class="DisneyCombo" src="Imagens/DisneyCombo.jpg" style="margin-left: auto; min-height: 60px;" >
+
+                    <button class="botaoSignUp" style="position: relative; z-index: 3;max-width: 250px;max-height: 50px; margin-left: auto;">SIGN UP NOW</button>
+                </span>
+
+                    <div class="espacoEntreButoes" id="espacoEntreButoes">...</div>
+
+                    <div style="width: 1%;"></div>
+
+                    <span style="display: inline-block;"></span>
+                <span class="spanBotaoSignUp" style="max-height: 60px;text-align: center;position: relative; top: 50px">
+                    <!--position: relative; top: 100px;-->
+
+                    <img class="StarDisney" style="min-height: 60px; z-index: 3;" src="Imagens/StarDisneyLionsgate.jpg">
+
+                    <button class="botaoSignUp" style="position: relative; z-index: 3;max-width: 250px;max-height: 50px; margin-left: auto; right: 10%;">SIGN UP NOW</button>
+                </span>
+                
+                    </div>
+                
+            </div>
+
+            
+
+            <div class="FundoMenorJanela" id="conteudo" style="height: 580px; background-image: url(FundoHeros0.png);">
+            </div>
+            <br>
+
+        </section>
+        
+    </main>
+    <br>
+    
+    <br>
+
+<main>
+    <section class="JanelaSecundaria" style="margin-top: 150px;">
+        <div class="DivDoTitulo" style="text-align: center;">
+
+        <div style="height: 32px;"></div>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        
+        <span><h2 class="EstiloDoTitulo" style="display: inline-block;">Select your plan</h2></span>
+        
+        <h4 class="CancelAnyTime" style="color: white;font-weight: lighter;border: 1px solid transparent;">cancel any time</h4>
+
+        <div style="height: 1px;border-bottom: 1px solid #ffffff12;width: 80%;"></div>
+
+        <div class="PlanosEmGrid">
+            <div class="ElementoGrid"></div>
+            <div class="ElementoGrid" style="padding-right: 10px;">
+            <p>Disney+</p>
+            <img src="Imagens/Disney+.jpg" class="TamanhoImg1">
+            <button class="BotaoPlanoMensal">R$ 33,90/MONTH*</button></div>
+
+            <div class="ElementoGrid">
+                <p>Combo+</p>
+                <img src="Imagens/DisneyCombo.jpg" class="TamanhoImg2">
+                <button class="BotaoPlanoMensal">R$ 33,90/MONTH*</button></div>
+
+            <div class="ElementoGrid"><p style="max-height: 25px;">Star+ Disney+ <small>LIONSGATE+</small></p>
+                <img src="Imagens/StarDisneyLionsgate.jpg" style="width: 200px; height: 63px;" class="TamanhoImg3">
+                <button class="BotaoPlanoMensal" style="min-height: 23px;max-height: 23px;">R$ 33,90/MONTH*</button></div>
+        </div><!--FechamentoGrid-->
+
+        <div style="height: 20px; width: 100%;"><br></div>
+        
+
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 40px;">Annual price</p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/MostPopular.jpg" style="width: 200px; height: auto;" class="">
+            </div>
+
+            <div class="ElementoGrid2">
+                <img src="Imagens/TracejadoDoPlano.jpg" style="width: 200px; height: auto;" class="">
+            </div>
+            
+            <div class="ElementoGrid2">
+                <img src="Imagens/TracejadoDoPlano.jpg" style="height: auto;border: 1px solid transparent;" class="">
+            </div>
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+        <!--linha3-->
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 20px;">Original series, classics and movies from Disney, Pixar, Marvel, Star Wars and National Geographic</p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+                </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+                </div>
+            
+                <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+                </div>
+
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+        <!--linha4-->
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 20px;">Live sports from the world's best leagues and biggest tournaments from ESPN</p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/TracejadoDoPlano.jpg" class="">
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+            
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+            
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+    <!--linha5-->
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 20px;">Local productions and award-winning TV shows, movies, and series exclusively on Star+</p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/TracejadoDoPlano.jpg" class="">
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+            
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+        <!--linha6-->
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 20px;">Stream up to 4 different devices at once</p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/4doplano.jpg" class="">
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/4+4doplano.jpg" class="">
+            </div>
+            
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/4+4+4doplano.jpg" class="">
+            </div>
+
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+        <!--linha7-->
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 20px;">Download and watch your favorites without connection or delays</p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+            
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/VistoDoPlano.jpg" class="">
+            </div>
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+        <!--linha8-->
+        <div class="PlanosEmGrid2">
+            <div class="ElementoGrid2">
+            <p style="padding-left: 20px;">Create personalized profiles within your account
+            </p>
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/7doplano.jpg" class="">
+            </div>
+
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/7+7doPlano.jpg" class="">
+            </div>
+            
+            <div class="ElementoGrid2" style="align-items: center;">
+                <img src="Imagens/7+7+5doPlano.jpg" class="">
+            </div>
+        </div><!--FechamentoGrid-->
+        <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+    <!--linha9-->
+    <div class="PlanosEmGrid2">
+        <div class="ElementoGrid2">
+        <p style="padding-left: 20px;">Protect your family with parental controls
+        </p>
+        </div>
+
+        <div class="ElementoGrid2" style="align-items: center;">
+            <img src="Imagens/VistoDoPlano.jpg" class="">
+        </div>
+
+        <div class="ElementoGrid2" style="align-items: center;">
+            <img src="Imagens/VistoDoPlano.jpg" class="">
+        </div>
+        
+        <div class="ElementoGrid2" style="align-items: center;">
+            <img src="Imagens/VistoDoPlano.jpg" class="">
+        </div>
+    </div><!--FechamentoGrid-->
+    <div style="width:95%; border-bottom: 1px solid rgb(89, 87, 87);"></div>
+
+
+    <p style="width: 95%;">* The price may vary if billed through other platforms.</p>
+    <br>
+    </div><!--div principal-->
+    </section>
+</main>
+
+
+
+<!--Terceira Sessão-->
+<section class="terceiraParte" style="margin-bottom: 50px;">
+    <!--width 40%-->
+    
+    <div class="DivTerceiraParte1" style="display: inline-flex; flex-wrap: wrap;justify-content: center;"><br>
+    <img class="imgTerceiraParte1" src="Imagens/fotoMandalorian.jpg" style="height: 100%;max-width: 800px; ">
+    </div>
+    
+        <!--tamanho definido-->
+    <div class="DivTerceiraParte2">
+        
+        <h2 class="white" style="min-width: 100%;height: fit-content;font-size: 30px;">Watch the way you want</h2>
+        
+        <p class="paragrafoTerceiraParte" style="padding: 0px 30px 20px 30px; color: rgb(183, 183, 183);font-size: 20px; ">Enjoy the big screen experience on your TV, or watch on your tablet, laptop, phone and more. You can watch an ever-growing selection of titles in 4K. Plus, you can stream on 4 screens at once, so everyone’s happy.</p>
+    </div>
+</div>
+</section>
+
+    <!--Quarta Sessão-->
+<section class="quartaParte">
+<div class="CabecalhoSite">
+
+    <div class="espacoQuartaSessao"></div>
+<h2 class="white">Exclusive Disney+ Originals</h2>
+
+<p class="" style="font-size: 20px; color: rgb(167, 167, 167);">Watch never-before-seen movies,series,shorts and more from the world´s greatest storytellers --only available on Disney+</p>
+</div>
+
+<div class="FilmesEmGrid">
+    <div class="FilmeGrid" style="border: 5px solid ;"><img src="Imagens/luca-1.jpg" style="width: 100%;height: 100%;"></div>
+    <div class="FilmeGrid"><img src="Imagens/luca-2.jpg" style="width: 100%;height: 100%;"></div>
+    <div class="FilmeGrid"><img src="Imagens/luca-3.jpeg" style="width: 100%;height: 100%;"></div>
+
+    <div class="FilmeGrid"><img src="Imagens/luca-4.jpg" style="width: 100%;height: 100%;"></div>
+    <div class="FilmeGrid"><img src="Imagens/luca-5.jpg" style="width: 100%;height: 100%;"></div>
+    <div class="FilmeGrid"><img src="Imagens/luca-6.jpg" style="width: 100%;height: 100%;"></div>
+
+    <div class="FilmeGrid"><img src="Imagens/luca-7.jpg" style="width: 100%;height: 100%;"></div>
+    <div class="FilmeGrid"><img src="Imagens/luca-8.jpg" style="width: 100%;height: 100%;"></div>
+    <div class="FilmeGrid"><img src="Imagens/luca-9.jpg" style="width: 100%;height: 100%;"></div>
+</section>
+<!--Quinta sessão-->
+<section class="quintaParte">
+    <div style="height: fit-content;"></div>
+    <br>
+    <div class="TituloQuintaParte">
+        <h2 class="white">Download any serie or movie</h2>
+        <p>Download whatever you want and watch whenever you want. Your favorites will always stay with you, even if your Wi-Fi won’t.</p>
+    </div>
+
+</section>
+
+<!--Sexta sessão-->
+<section class="sextaParte" style="position: relative;">
+
+    <div style="position: absolute; color: white;top:20px;font-size: 40px;width: 100%; text-align: center;">
+
+        
+        <div class="divSextaParte";
+        >Available on your favorite devices</div></div>
+        
+
+    <div class="containerLista" style="text-align: center;">
+        <img src="imagesTarefa/dispositivos/computador.png"  style="width: 100%;" >
+        <h2>Computer</h2>
+        <ul style="list-style-type: none;padding: 0px;">
+            <li>Chrome OS</li>
+            <li>MacOS</li>
+            <li>Windows PC</li>
+        </ul>
+    </div>
+
+    <div class="containerLista">
+        <img src="imagesTarefa/dispositivos/tv.png" style="width: 100%; height: auto%;">
+        <h2>TV</h2>
+        <ul style="list-style-type: none;padding: 0px;">
+            <li>Amazon Fire TV</li>
+            <li>Android TV</li>
+            <li>Apple TV</li>
+            <li>Chromecast</li>
+            <li>LG TVs</li>
+            <li>Roku</li>
+            <li>Samsung</li>
+        </ul>
+    </div>
+
+    <div class="containerLista">
+        <img src="imagesTarefa/dispositivos/videogames.png" style="width: 100%; height: auto%;">
+        <h2>Game Consoles</h2>
+        <ul style="list-style-type: none;padding: 0px;">
+            <li>PS4</li>
+            <li>PS5</li>
+            <li>Xbox One</li>
+            <li>Xbox Series X</li>
+            <li>Xbox Series S</li>
+        </ul>
+    </div>
+
+    <div class="containerLista">
+        <img src="imagesTarefa/dispositivos/celular.png" style="width: 100%; height: auto;">
+        <h2>Mobile & Tablet</h2>
+        <ul style="list-style-type: none;padding: 0px;">
+            <li>Amazon Fire Tablets
+            <li>Android Phones & Tablets</li>
+            <li>iPhone & iPad</li>
+        </ul>
+    </div>
+</section>
+<!---->
+<section class="setimaParte white" >
+    <div style="width: 100%; padding-bottom: 0px; height: 12vh;font-size: 20px;text-align: center;">
+    <h2 style="font-size: 40px;">Frequently Asked Questions</h2>
+    </div>
+    <div style="height: 10px;width: 100%;"></div>
+
+    <div class="" style="display: flex;flex-direction: column;align-items: center;">
+<!--Accordion-->
+<div class="accordion" id="elemento1"><p style="padding-left: 30px;">Do you ready have a Disney+ or Stay+ subscription but want Combo+
+    
+    <button id="button1" onclick="togglePropriedade('elemento2');toggleBackground('img1')" class="botaoAccordion " style="position: relative; cursor: pointer; float: right; padding: 2px; width: fit-content; background-color: transparent;">
+            <img id="img1" class="imagemMais">
+    </button>
+        
+</div>
+<div class="accordionAbertoOff accordionstyle opacidade" id="elemento2">
+
+    <ul class="listaAccordion" >
+        <p style="color: white;">
+            <button id="button2" class="botaoAccordion" style="position: relative; cursor: pointer; float: right;padding: 2px; width: fit-content; background-color: transparent;">
+                <img style="width: 35px;height: auto;">
+            </button>
+            </p>
+        With Disney+, you get:
+    <div style="height: 10px;width: 100%;"></div>
+        
+    <li>Exclusive entertainment experience.</li>
+    <li>The greatest stories of Disney, Pixar, Marvel, Star Wars, and National Geographic, all in one place.</li>
+    <li>GroupWatch, a way to watch Disney+ together, even when you’re apart.</li>
+    <li>Unlimited downloads on up to 10 devices.</li>
+    <li>Over 300 titles in 4K UHD and HDR.</li>
+    <li>Up to 4 current streams.</li>
+    <li>IMAX Enhanced. Available with certain Marvel titles and accessible on all devices where Disney+ is supported.</li>
+</ul>
+<!---->
+</div>
+<!--obs-->
+<!-- ----------------------------------- -->
+<!--Accordion-->
+<br>
+<div class="accordion" id="elemento3"><p style="padding-left: 30px;">Do you already have a Disney+ or Star+ subscription but want Combo+?
+    
+    <button id="button3" onclick="togglePropriedade('elemento4');toggleBackground('img2')" class="botaoAccordion " style="position: relative; cursor: pointer; float: right; padding: 2px; width: fit-content; background-color: transparent;">
+        <img id="img2" class="imagemMais">
+</button>
+        </p>
+</div>
+<div class="accordionAbertoOff accordionstyle opacidade" id="elemento4">
+    <ul class="listaAccordion">
+        <p style="color: white;">
+            <button id="button4" onclick="togglePropriedade('elemento4')" class="botaoAccordion " style="position: relative; cursor: pointer; float: right;padding: 2px; width: fit-content; background-color: transparent;">
+            </button>
+            </p>
+            With Combo+:
+    <div style="height: 10px;width: 100%;"></div>
+    <li>We will discount the value of your existing subscription to the Combo+ deal. (Yes, for the annual plan as well!)</li>
+    <li>If you have a monthly subscription, your monthly bill will be reduced to the Combo+ price.</li>
+    <li>If you have an annual subscription, we will divide your annual price into 12 equal parts and discount the monthly price to the Combo+ monthly payment.</li>
+    <li>A detailed email with all of the payment charges and deductions will be sent to your inbox as soon as you confirm your Combo+ payment method.</li>
+    <li>Remember you can cancel at any moment.</li>
+    The Combo+ subscription is only offering a monthly plan at this moment.
+</ul>
+<!---->
+</div>
+<!--obs-->
+<!-- ----------------------------------- -->
+<!--Accordion-->
+<br>
+<div class="accordion" id="elemento5"><p style="padding-left: 30px;">What payment methods can I use?
+    
+    <button id="button5" onclick="togglePropriedade('elemento6');toggleBackground('img3')" class="botaoAccordion " style="position: relative; cursor: pointer; float: right; padding: 2px; width: fit-content; background-color: transparent;">
+        <img id="img3" class="imagemMais">
+    </button>
+
+</div>
+<div class="accordionAbertoOff accordionstyle" id="elemento6">
+    <ul class="listaAccordion">
+        <p style="color: white;">
+            <button id="botao6" class="" style="position: relative; cursor: pointer; float: right;padding: 2px; width: fit-content; background-color: transparent;">
+            </button>
+            </p>
+            You can pay with a credit card, debit card, PayPal, Mercado Pago or also through third parties such as Google Play Store, Apple App Store; Mercado Livre and local TV, telephone and internet providers.
+    <div style="height: 10px;width: 100%;"></div>
+</ul>
+<!---->
+</div>
+<!--obs-->
+<!--Accordion-->
+<br>
+<div class="accordion" id="elemento7"><p style="padding-left: 30px;">How can I stream the new 16+ and 18+ content?
+    
+    <button id="button7" onclick="togglePropriedade('elemento8');toggleBackground('img4')" class="botaoAccordion " style="position: relative; cursor: pointer; float: right; padding: 2px; width: fit-content; background-color: transparent;">
+        <img id="img4" class="imagemMais">
+</button>
+</div>
+<div class="accordionAbertoOff accordionstyle" id="elemento8">
+    <ul class="listaAccordionO">
+        <p style="color: white;">
+            <button class="botaoAccordion" style="position: relative; cursor: pointer; float: right;padding: 2px; width: fit-content; background-color: transparent;">
+            </button>
+            </p>
+        
+    Disney+ subscribers in Latin America will need to update the parental controls on their profile in order to access to the full catalog that includes 16+ and 18+ content. Users are able to restrict content in each profile as well as add a lock PIN. If you are a subscriber and you prefer to keep your current parental settings, you will enjoy all Disney+ content in a 14+ environment, and you will have the option to modify parental controls in the “edit profile” section any time.
+</ul>
+<!---->
+</div>
+<!--obs-->
+<!-- ------------------------------------ -->
+<div style="height: 20vh;"></div>
+<footer style="text-align: center; height: fit-content;">
+<img src="imagens/Disney+.jpg" width="80px" height="43px">
+<div><br></div>
+<div style="display: inline-flex;">
+    <a href class="white">English</a>
+    <a style="padding-left: 10px;" href class="white">Terms of Use</a>
+    <a style="padding-left: 10px;" href class="white">Privacy Policy</a>
+    <a style="padding-left: 10px;" href class="white">Data Protection in Brazil</a>
+    <a style="padding-left: 10px;" href class="white">Interested-Based Ads</a>
+</div>
+<div><br></div>
+<a style="padding-left: 15px;">Supported Devices</a>
+<a style="padding-left: 15px;">Help</a>
+<a style="padding-left: 15px;">About Us</a>
+<div><br></div>
+<p>Todos os direitos reservados da Disney.Essa página é somente um esboço da página,sem fins lucrativos.</p>
+
+</footer>
+</section>
+
+</body>
